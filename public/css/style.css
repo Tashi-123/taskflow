@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f5f7;
+  color: #333;
+}
+
+#authSection {
+  max-width: 400px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#authSection input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#authSection button {
+  width: 100%;
+  padding: 10px;
+  background: #0079bf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#authSection button:hover {
+  background: #026aa7;
+}
+
+header {
+  background: #0079bf;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  background: white;
+  color: #0079bf;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#projectsView, #boardView {
+  padding: 20px 30px;
+}
+
+#newProjectForm, #newTaskForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#newProjectForm input, #newTaskForm input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+}
+
+#newProjectForm button, #newTaskForm button {
+  padding: 8px 16px;
+  background: #0079bf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.project-card:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.board {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.column {
+  background: #ebecf0;
+  border-radius: 6px;
+  padding: 10px;
+  width: 300px;
+  min-height: 400px;
+}
+
+.column h3 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.cards {
+  min-height: 50px;
+}
+
+.task-card {
+  background: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.task-card:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.task-card .task-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.task-card .task-desc {
+  font-size: 0.85em;
+  color: #666;
+}
+
+#taskModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#modalTaskStatus {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#commentsList {
+  margin-bottom: 10px;
+}
+
+.comment {
+  background: #f4f5f7;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  font-size: 0.9em;
+}
+
+.comment .comment-author {
+  font-weight: bold;
+  font-size: 0.85em;
+  color: #0079bf;
+}
+
+#newCommentText {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
